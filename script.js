@@ -72,6 +72,12 @@ function addTask(event, dayKey) {
     input.value = '';
   }
 }
+function playMusic() {
+  const music = document.getElementById('bgMusic');
+  music.play();
+  document.getElementById('musicBtn').style.display = 'none';  // hide button after click
+}
+
 
 populateMonthYear();
 renderCalendar();
